@@ -1,24 +1,11 @@
 import os
-
 import wx
-
 import datetime
 
-
-
-
-
 nodesList=[]
-
 nodenamesList=[]
-
 networkList=[]
-
 evidenceList=[]
-
-
-
-
 
 # -*- coding: utf-8 -*-
 
@@ -65,12 +52,6 @@ import networkx as nx
 
 import matplotlib.pylab as plt
 
-
-
-
-
-
-
 def extend(d, k, v):
 
     """Returns a new dict containing elements of d and the new key,value pair
@@ -82,8 +63,6 @@ def extend(d, k, v):
     n[k] = v
 
     return n
-
-        
 
 def cut(d, k):
 
@@ -107,8 +86,6 @@ def cut(d, k):
 
     return [v for v in d if v != k]
 
-
-
 def reset(bn):
 
     """This method takes a Bayesian network object as parameter and  resets 
@@ -118,9 +95,6 @@ def reset(bn):
     bn.nodes=[]
 
     
-
-        
-
 def display(bn):
 
     """This method displays the Bayesian network as a directed graph with 
